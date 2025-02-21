@@ -16,26 +16,108 @@ const timer = document.querySelector('.timer');
 // Make an array of objects that stores question, choices of question and answer 
 const quiz = [
     {
-        question: "Q. Which of the following is not a CSS box model property?",
-        choices: ["margin", "padding", "border-radius", "border-collapse"],
-        answer: "border-collapse"
+        question: "Q. What is the full form of URL?",
+        choices: ["Uniform Resource Locator", "Universal Resource Link", "Unified Resource Locator", "Uniform Reference Link"],
+        answer: "Uniform Resource Locator"
     },
     {
-        question: "Q. Which of the following is not a valid way to declare a function in JavaScript?",
-        choices: ["function myFunction() {}", " let myFunction = function() {};", "myFunction: function() {}", "const myFunction = () => {};"],
-        answer: "myFunction: function() {}"
+        question: "Q. What type of software is MS Word?",
+        choices: ["Operating System", "Application Software", "System Software", "Utility Software"],
+        answer: "Application Software"
     },
     {
-        question: "Q. Which of the following is not a JavaScript data type?",
-        choices: ["string", "boolean", "object", "float"],
-        answer: "float"
+        question: "Q. Which of the following is not an input device?",
+        choices: ["Scanner", "Printer", "Keyboard", "Mouse"],
+        answer: "Printer"
     },
     {
-        question: "Q. What is the purpose of the this keyword in JavaScript?",
-        choices: ["It refers to the current function.", "It refers to the current object.", "It refers to the parent object.", " It is used for comments."],
-        answer: "It refers to the current object."
+        question: "Q. What does HTML stand for?",
+        choices: ["Hyper Text Markup Language", "High Text Markup Language", "Hyper Tabular Markup Language", "Hyperlinks Text Mark Language"],
+        answer: "Hyper Text Markup Language"
+    },
+    {
+        question: "Q. What is the shortcut key for pasting copied content in Windows?",
+        choices: ["Ctrl + P", "Ctrl + V", "Ctrl + X", "Ctrl + C"],
+        answer: "Ctrl + V"
+    },
+    {
+        question: "Q. What is the smallest unit of data in a computer?",
+        choices: ["Bit", "Byte", "Kilobyte", "Megabyte"],
+        answer: "Bit"
+    },
+    {
+        question: "Q. Which of the following is not a programming language?",
+        choices: ["Python", "Java", "MS Excel", "C++"],
+        answer: "MS Excel"
+    },
+    {
+        question: "Q. What is an example of system software?",
+        choices: ["Operating System", "MS Word", "Photoshop", "Excel"],
+        answer: "Operating System"
+    },
+    {
+        question: "Q. What does PDF stand for?",
+        choices: ["Portable Document Format", "Public Document File", "Personal Data File", "Printed Document Format"],
+        answer: "Portable Document Format"
+    },
+    {
+        question: "Q. Which type of memory is volatile?",
+        choices: ["RAM", "ROM", "Hard Disk", "CD-ROM"],
+        answer: "RAM"
+    },
+    {
+        question: "Q. What does IP stand for in networking?",
+        choices: ["Internet Protocol", "Internal Program", "Internet Procedure", "Integrated Program"],
+        answer: "Internet Protocol"
+    },
+    {
+        question: "Q. Which key is used to refresh a webpage?",
+        choices: ["F5", "F1", "F2", "F10"],
+        answer: "F5"
+    },
+    {
+        question: "Q. What is the primary function of a web browser?",
+        choices: ["To access websites on the internet", "To create software", "To edit images", "To manage files"],
+        answer: "To access websites on the internet"
+    },
+    {
+        question: "Q. Which device is used for storing large amounts of data permanently?",
+        choices: ["Hard Disk", "RAM", "ROM", "Cache"],
+        answer: "Hard Disk"
+    },
+    {
+        question: "Q. What is the purpose of a firewall in computer networks?",
+        choices: ["To provide security by controlling incoming and outgoing network traffic", "To increase internet speed", "To edit documents", "To create graphics"],
+        answer: "To provide security by controlling incoming and outgoing network traffic"
+    },
+    {
+        question: "Q. What does CPU stand for?",
+        choices: ["Central Processing Unit", "Central Program Unit", "Computer Personal Unit", "Control Processing Unit"],
+        answer: "Central Processing Unit"
+    },
+    {
+        question: "Q. Which device is used to produce hard copies of documents?",
+        choices: ["Printer", "Monitor", "Keyboard", "Mouse"],
+        answer: "Printer"
+    },
+    {
+        question: "Q. What is the main function of an operating system?",
+        choices: ["To manage computer hardware and software", "To create graphics", "To design websites", "To play videos"],
+        answer: "To manage computer hardware and software"
+    },
+    {
+        question: "Q. Which programming language is primarily used for web development?",
+        choices: ["HTML", "C++", "Python", "Java"],
+        answer: "HTML"
+    },
+    {
+        question: "Q. What does BIOS stand for?",
+        choices: ["Basic Input Output System", "Binary Input Output System", "Basic Internet Operating System", "Basic Internal Output System"],
+        answer: "Basic Input Output System"
     }
+    
 ];
+
 
 // Making Variables
 let currentQuestionIndex = 0; //question ke indexing object me se maintain krega 0 based hai ye 
